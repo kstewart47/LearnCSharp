@@ -17,7 +17,7 @@ namespace datatypes
             // create a method  called  JoinStrings which takes in two strings then output the result to the console and
             //return a string of these stings joined with a space  between them make sure it is public
             // call JoinStrings with your first and last name
-
+            string myResult = JoinStrings("kerr", "stewart");
 
 
             // create a method  called  Arthimetic which takes in two  numbers and returns a result  of a  mathematical
@@ -31,6 +31,30 @@ namespace datatypes
 
         }
 
+        public static string JoinStrings(string one, string two)
+        {
+            string result = one + " " + two;
+            Console.WriteLine(result);
+            return result;
 
-    }
-}
+
+        }
+
+        public static int Arithmetic(int a, int b, char op)
+        {
+            var result =0;
+            if(op == '+')
+                {
+                    result= a + b;
+                }
+            if (op == '-')
+               {
+                   result= a - b;
+                   }
+            if (op == '*')
+                {
+                    result= a * b;
+                    }
+            Console.WriteLine(result);
+            return result;
+
